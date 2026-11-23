@@ -18,10 +18,14 @@ documentary videos to the owner's own YouTube channel. This policy explains how 
 Google user data.</p>
 
 <h2>1. Data the app accesses</h2>
-<p>The app requests a single Google OAuth permission:
-<code>https://www.googleapis.com/auth/youtube.upload</code>. With it the app uploads video files,
-titles, descriptions, tags, thumbnails and the publication schedule to the authorizing user's
-YouTube channel. The app does not access any other Google account data.</p>
+<p>The app requests two Google OAuth permissions:</p>
+<ul>
+  <li><code>https://www.googleapis.com/auth/youtube.upload</code> – to upload video files, titles,
+      descriptions, tags, thumbnails and the publication schedule to the authorizing user's YouTube channel.</li>
+  <li><code>https://www.googleapis.com/auth/youtube.force-ssl</code> – only to add each uploaded video to a
+      playlist on the same channel and to read the upload's processing status.</li>
+</ul>
+<p>The app does not read comments, subscribers, analytics or any other Google account data.</p>
 
 <h2>2. How the data is used</h2>
 <p>The permission is used only to publish videos that the owner has produced, to the owner's own
